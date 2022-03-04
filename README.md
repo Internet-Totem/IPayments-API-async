@@ -9,7 +9,7 @@
 
 ### Синхронный код
 
-Точно такой же пример, но написанный на синхронном коде (aiogram -> **pyTelegramBotAPI**; aiohttp -> **requests**) можно посмотреть здесь.
+Точно такой же пример, но написанный на синхронном коде (aiogram -> **pyTelegramBotAPI**; aiohttp -> **requests**) можно посмотреть [здесь](https://github.com/Internet-Totem/IPayments-API-sync).
 
 
 ## Начало работы
