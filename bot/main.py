@@ -25,7 +25,7 @@ async def start(message):
                 api = await api_help.api(TOKEN_IPAYMENTS)
                 invoice = await api.checkInvoice(invoice_id)
             except:
-                await bot.send_message(message.chat.id, '*Произошла ошибка при попытке получить информацию о счете.* Скорее всего, где-то произошла ошибка -> счет был создан.')
+                await bot.send_message(message.chat.id, '*Произошла ошибка при попытке получить информацию о счете.* Скорее всего, где-то произошла ошибка (счет не был создан).')
                 return 0
 
             if invoice['result']['status'] == 'PAID':
