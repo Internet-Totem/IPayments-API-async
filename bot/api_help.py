@@ -32,7 +32,7 @@ async def send_request(request_url, method, params=None):
 class api:
     async def __init__(self, token):
         self.token = token
-        self.request_url = 'http://127.0.0.1/' + token + '/'
+        self.request_url = 'https://api.i-payments.xyz/' + token + '/'
 
         #await send_request(self.request_url, 'getMe')
 
