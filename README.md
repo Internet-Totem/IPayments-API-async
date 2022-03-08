@@ -21,6 +21,7 @@
 
 - aiogram
 - aiohttp
+- asyncinit
 
 
 ### Запуск
