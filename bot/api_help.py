@@ -12,7 +12,6 @@ async def send_request(request_url, method, params=None):
                 payload+="&"
 
         async with session.get(request_url + payload) as request:
-            print(request.url)
 
             if not request.ok:
                 raise Exception('Сервер ответил ошибкой (или не ответил). Возможно нестабильное соединение с сетью')
