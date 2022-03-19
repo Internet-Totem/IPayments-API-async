@@ -17,8 +17,7 @@ async def send_request(request_url, method, params=None):
             if not request.ok:
                 raise Exception('Сервер ответил ошибкой (или не ответил). Возможно нестабильное соединение с сетью')
 
-            else:
-                request = await request.json()
+            request = await request.json()
 
             if request['fatalError']:
                 raise Exception(request['description'])
@@ -33,8 +32,6 @@ class api:
     async def __init__(self, token):
         self.token = token
         self.request_url = 'https://api.i-payments.xyz/' + token + '/'
-
-        #await send_request(self.request_url, 'getMe')
 
     async def createInvoice(self,
                       amount,
